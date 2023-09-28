@@ -1,10 +1,6 @@
-
-file_path = "example.txt"
-old_text = "replace_this"
-new_text = "with_this"
-with open(file_path, "r") as file:
-    file_contents = file.read()
-file_contents = file_contents.replace(old_text, new_text)
-with open(file_path, "w") as file:
-    file.write(file_contents)
-print(f"Data has been replaced in {file_path}.")
+#!/bin/bash
+file="example.txt"
+old_text="replace_this"
+new_text="with_this"
+sed -i "s/$old_text/$new_text/g" "$file"
+echo "Data has been replaced in $file."
