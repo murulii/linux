@@ -3,7 +3,7 @@
 
 # PostFix Configuration
 First take backup main.cf
-# ###################################  main.cf ###############################################
+# ########################  main.cf #############
 `nano /etc/postfix/main.cf`
 
 Postfix Config lines
@@ -19,12 +19,13 @@ Postfix Config lines
 
 # Enables SASL authentication for postfix
 `smtp_sasl_auth_enable = yes`
+
 `smtp_tls_security_level = encrypt`
 
 # Disallow methods that allow anonymous authentication
 `smtp_sasl_security_options = noanonymous`
 
-# #####################################################################################
+# ##############################################
 -------------------------------------------------------------------------------------------
 
 Create a file under /etc/postfix/sasl/
