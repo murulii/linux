@@ -31,15 +31,19 @@ Postfix Config lines
 # ##############################################
 -------------------------------------------------------------------------------------------
 
-Create a file under /etc/postfix/sasl/
+# Create a file under /etc/postfix/sasl/
 
 Filename: sasl_passwd
 
-Add the below line
+# Add the below line
 `[smtp.gmail.com]:587 email@gmail.com:password`
+
+# Convert the sasl_password file into db file
+
+`postmap /etc/postfix/sasl/sasl_password`
 
 ------------------------------------------------------------------------------------------
 
-To send an email using Linux terminal
+# To send an email using Linux terminal
 
 `echo "Test Mail" | mail -s "Postfix TEST" paul@gmail.com`
