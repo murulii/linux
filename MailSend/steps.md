@@ -11,6 +11,7 @@ Postfix Config lines
 Add the following lines
 
 `relayhost = [smtp.gmail.com]:587`
+
 `myhostname= your_hostname`
 
 # Location of sasl_passwd we saved
