@@ -3,12 +3,12 @@
 
 # PostFix Configuration
 First take backup main.cf
-
+# ###################################  main.cf ###############################################
 `nano /etc/postfix/main.cf`
 
 Postfix Config lines
 
-Add the following lines
+# Add the following lines
 
 `relayhost = [smtp.gmail.com]:587`
 
@@ -24,6 +24,7 @@ Add the following lines
 # Disallow methods that allow anonymous authentication
 `smtp_sasl_security_options = noanonymous`
 
+# #####################################################################################
 -------------------------------------------------------------------------------------------
 
 Create a file under /etc/postfix/sasl/
