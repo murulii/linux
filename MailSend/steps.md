@@ -38,12 +38,15 @@ Filename: sasl_passwd
 # Add the below line
 `[smtp.gmail.com]:587 email@gmail.com:password`
 
+# Give read and write acess only for ROOT user
+`chmod 600 sasl_passwd`
+
 # Convert the sasl_password file into db file
 
-`postmap /etc/postfix/sasl/sasl_password`
+`postmap /etc/postfix/sasl/sasl_passwd`   ##it will create `sasl_passwd.db` file
 
 ------------------------------------------------------------------------------------------
 
 # To send an email using Linux terminal
 
-`echo "Test Mail" | mail -s "Postfix TEST" paul@gmail.com`
+`echo "Test Mail" | mail -s "Postfix TEST" otherusergmail@gmail.com`
