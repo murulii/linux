@@ -1,3 +1,6 @@
+# Video link
+ `https://www.youtube.com/watch?v=blYx6VQEPXY&list=PL0tP8lerTbX1PRZvp0DUswYL65nQlw48Y&index=7`
+
 # Installation 
 `apt-get install postfix && apt-get install mailutils`
 
