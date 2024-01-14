@@ -1,8 +1,11 @@
 ```
 Diff b/w awk and SED
-Awk is used to format a data and filter a data on file
-sed is used to edit stramming data or ouput
-
+Awk is used to format a data and filter a data on file and its works on structured data like csv,tsv
+sed is used to format a data and used to edit stramming data or ouput adn it works on line by line if it is structured or un strucred
+sed using we can replace data
+```
+**AWK**
+```
 awk '' filename.txt
 awk '{print}' filename.txt
 awk '{print $1,$2}' filename.txt //Display colum 1 and 2 
@@ -11,3 +14,10 @@ awk '/muruli/ {count++} END {print count}' file.txt //Count how many times murul
 awk '/muruli/ {count++} END {print "the count is ", count}' file.txt //Find the count
 awk '$2 >= "08:23" && $2 <= "08:25" {print $2,$3,$4}' file.txt  //Display the data that time b/w 8:23 to 8:25 and print it the 2 3 4 colums
 ```
+**SED**
+```
+sed '' file.txt
+sed -n '/info/p' file.txt        // "-n" is used to match/filter exact cahracter ex "info" and "p" used to print
+
+```
+
