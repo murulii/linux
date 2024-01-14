@@ -27,6 +27,7 @@ sed -n -e '/info/=' -e '/info/' file.txt //print which line contain info "-e" ex
 **Grep**
 
 i want to find data thats runs on process ps
+we can grep the output displayed ex ps aux | grep cpu
 ```
 grep -i -c info file.txt //seach info "-i" casesenstive and non casesensitive data and  "-c" count
 ```
